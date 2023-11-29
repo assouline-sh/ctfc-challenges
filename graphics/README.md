@@ -3,7 +3,7 @@ along with graphics I made!
 
 ## Fall 2023
 
-**Flier**: Fall Fest**: Flier used at Fall Fest to first promote our new club
+**Flier: Fall Fest**: Flier used at Fall Fest to first promote our new club
 
 **GM#1**: Introduction to the club, CTFs, and a variety of five easy challenges
 
