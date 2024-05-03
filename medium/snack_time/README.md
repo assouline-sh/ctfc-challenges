@@ -1,5 +1,5 @@
 # Snack Time
-# Forensics
+## Forensics
 
 You've been working hard.. have a nice tall glass of milk to warm up. Treking through these chilly challenges can be difficult, so I'll give you a hint. The first passphrase is 'secret'. That's all you get though! 
 Be on your way and good luck!

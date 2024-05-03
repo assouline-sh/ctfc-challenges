@@ -1,5 +1,5 @@
 # Trick Xor Treat
-# Crypto
+## Crypto
 
 - Convert hex string to byte array since cryptographic operations, especially bitwise operations like XOR, work with raw binary data
 - Iterate through possible values for the single byte the data was XORed with

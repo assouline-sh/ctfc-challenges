@@ -1,5 +1,5 @@
 # Puzzling Pcap
-# Forensics
+## Forensics
 
 - Open Pcap in Wireshark and search for http traffic
 - Navigate to imgur links, and see it is a QR code broken up into several images

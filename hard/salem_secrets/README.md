@@ -1,5 +1,5 @@
 # Salem Secrets
-# Web
+## Web
 
 - Look at source code, see reference to script.js and navigate to it
 - Use JWT decoder on token to get username, and notice password is base64 encrypted

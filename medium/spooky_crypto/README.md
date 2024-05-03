@@ -1,5 +1,5 @@
 # Spooky Crypto
-# Crypto
+## Crypto
 
 One of the hex values in file.txt were XOR'd with the number 16. Can you find which one it is and find the flag?
 

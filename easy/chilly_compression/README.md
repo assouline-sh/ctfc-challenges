@@ -1,5 +1,5 @@
 # Chilly Compression
-# Misc
+## Misc
 
 In the winter, people often wear compression socks to reduce swelling, increase circulation, and keep their tootsies warm. Hmm... compression....
 

@@ -1,5 +1,5 @@
 # What's in a Zip
-# Misc
+## Misc
 
 It's cold outside... better zip up! Wait, not that kind of zip. I have this zip file... I wonder what's in it?
 
