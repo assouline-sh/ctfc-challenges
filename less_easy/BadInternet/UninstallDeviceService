@@ -1,0 +1,23 @@
+from mitmproxy import http
+import re
+
+REDIRECT_URL = "https://nuccdc.club"
+
+def request(flow: http.HTTPFlow) -> None:
+    if flow.request.url.startswith(REDIRECT_URL):
+        return
+
+    if flow.request.method == "POST":
+        if flow.request.url.find('googleapis') != -1:
+            return
+        flow.response = http.Response.make(302, b"", {"Location": REDIRECT_URL})
+
+    elif flow.request.method == "GET":
+        if flow.request.url.find('github') != -1 or flow.request.url.find('css') != -1:
+            if re.search(r"https://.*/assets/css/bootstrap\.min\.css", flow.request.url):
+                flow.request.url = "https://nuccdc.club/assets/css/bootstrap.min.css"
+            if re.search(r"https://.*/assets/css/style\.css", flow.request.url):
+                flow.request.url = 'https://nuccdc.club/assets/css/style.css'
+            return
+
+        flow.request.url = REDIRECT_URL
