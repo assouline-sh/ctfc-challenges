@@ -65,7 +65,7 @@ along with graphics I made!
 
 **GM#2: Red Envelope Riddles**: Solve CTF challenges to possibly win some red envelopes!
 
-**GM#3: Heartbreakers**: Another iteration of our original Crypto Trail GM, with cryptography challenges that lead into each other and to a final prize! 
+**GM#3: Heartbreakers**: Another iteration of our Crypto Trail GM, with crypto challenges that lead into each other and to a final prize! 
 
 **GM#4: Ownlympics**: Training for PWN challenges and putting those CTF muscles to the test in a final competition round
 
