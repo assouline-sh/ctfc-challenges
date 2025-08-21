@@ -73,4 +73,4 @@ along with graphics I made!
 
 **GM#5: Big Study**: Prepare for the upcoming BIG CTF competition
 
-**BIG CTF**: My last event ever... so we made it BIG! More challenges than ever, more food, dessert, decorations, games, music, and more!
+**BIG CTF**: My last event ever... so we made it BIG! More challenges than ever, more food, decorations, games, music, and competitors!
