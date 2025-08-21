@@ -1,0 +1,1 @@
+ctf{this​_is​_literally​_the​_flag}

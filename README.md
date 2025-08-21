@@ -1,5 +1,5 @@
 # CTFC Challenges
 
-Various challenges I've made for CTF (Capture the Flag) Club. I am the current Co-Founder and Vice President. 
+Various challenges I've made for CTF (Capture the Flag) Club. I was the Co-Founder and Vice President for two years.
 
-See graphics folder for more event information.
+See https://neu-ctf.club/ or graphics folder for more event information.

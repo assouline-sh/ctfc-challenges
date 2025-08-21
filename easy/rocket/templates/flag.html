@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../global.css" />
+    <title>Agent Rocket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            position: relative; /* Allow absolute positioning of rocket */
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            position: relative; /* Keeps the text in place while rocket moves */
+            z-index: 10; /* Ensure text stays on top of rocket */
+        }
+
+        .rocket {
+            width: 100px;
+            height: auto;
+            position: absolute;
+            bottom: 1;
+            left: 1;
+            transition: transform 1s ease-in-out;
+        }
+
+        .rocket-up {
+            animation: rocketLaunch 3s forwards;
+        }
+
+        @keyframes rocketLaunch {
+            0% {
+                transform: translate(0, 0); /* Starting position at bottom right */
+            }
+            100% {
+                transform: translate(500px, -5000px); /* Move diagonally to top left */
+                opacity: 0;
+            }
+        }
+
+        .input-group {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between input and button */
+        }
+
+        .input-launch {
+            padding: 10px;
+            width: 200px; /* Fixed width for the input box */
+            font-size: 14px;
+            color: #f0f0f0; /* Very light gray text color */
+            background-color: #333; /* Dark background for the input box */
+            border: 1px solid #555; /* Border color */
+            border-radius: 5px; /* Rounded corners */
+            outline: none; /* Remove default focus outline */
+        }
+
+        .input-launch::placeholder {
+            color: #aaa; /* Light gray placeholder text */
+            opacity: 1; /* Firefox */
+        }
+
+        .input-launch:focus {
+            border-color: #4CAF50; /* Green border when focused */
+        }
+
+        .btn-enter {
+            padding: 10px 20px;
+            font-size: 14px;
+            color: white;
+            background-color: #4CAF50; /* Green background */
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer;
+        }
+
+        .btn-enter:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        .flag-text {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Back Admin</h1>
+        <p>Here is your flag: CTF{0nly_Up!} </p>
+		<p> You should be able to launch the rocket with this. </p>
+
+        <!-- Rocket image -->
+        <img id="rocket" class="rocket" src="https://cdn-icons-png.flaticon.com/512/619/619175.png" alt="Rocket">
+
+        <!-- Input box and Enter button -->
+        <div class="input-group">
+            <input id="launchInput" class="input-launch" type="text" placeholder="enter launch code :D" onkeypress="handleKeyPress(event)">
+            <button id="enterButton" class="btn-enter" onclick="launchRocket()">Enter</button>
+        </div>
+    </div>
+
+    <script>
+        function launchRocket() {
+            var rocket = document.getElementById("rocket");
+
+            rocket.classList.add("rocket-up");
+
+            document.getElementById("launchInput").disabled = true;
+            document.getElementById("enterButton").disabled = true;
+            document.getElementById("launchInput").placeholder = "Rocket Launched!";
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                launchRocket();
+            }
+        }
+    </script>
+</body>
+</html>
